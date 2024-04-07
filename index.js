@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         feedbackData[key] = value;
       });
       
-      // Store feedback data locally
+
       localStorage.setItem('feedback', JSON.stringify(feedbackData));
       
       // Display feedback data
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
     
-    // Function to display feedback data
+
     function displayFeedback() {
       let storedData = JSON.parse(localStorage.getItem('feedback'));
       if (storedData) {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
     
-    // Call displayFeedback on page load
+
     displayFeedback();
   });
   
