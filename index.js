@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
       localStorage.setItem('feedback', JSON.stringify(feedbackData));
       
-      // Display feedback data
+
       displayFeedback();
       
-      // Reset form and selected rating
+
       document.getElementById('feedbackForm').reset();
       circles.forEach(function(c) {
         c.classList.remove("selected");
